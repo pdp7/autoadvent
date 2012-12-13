@@ -42,10 +42,8 @@ for i in range(candles):
    GPIO.setup(pin[i], GPIO.OUT)
    GPIO.output(pin[i], GPIO.HIGH)
 
-sleep(10)
-GPIO.output(17, GPIO.LOW)
+#sleep(5)
 
-for i in range(candles):
-   print pin[i]
-   GPIO.output(pin[i], GPIO.LOW)
-
+#for i in range(candles):
+#   print pin[i]
+#   GPIO.output(pin[i], GPIO.LOW)

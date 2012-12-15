@@ -44,11 +44,20 @@ class AutoAdvent():
 
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
-        pin = (17, 18, 27, 22)
+        pin = (17, 18, 21, 22)
         for i in range(candles):
             print pin[i]
             GPIO.setup(pin[i], GPIO.OUT)
             GPIO.output(pin[i], GPIO.HIGH)
+
+        GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+        while True:
+            input_value = GPIO.input(23)
+            if input_value == False:
+                print "SHUTDOWN"
+                os.system("sudo halt")
+                sleep(1)
+
 
 # following is executed when this script is run from the shell
 if __name__ == '__main__':

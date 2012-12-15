@@ -7,7 +7,7 @@ import sys
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-pin = (17, 18, 27, 22)
+pin = (17, 18, 21, 22)
 for i in pin:
    print i
    GPIO.setup(i, GPIO.OUT)

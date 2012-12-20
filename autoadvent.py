@@ -36,7 +36,7 @@ class AutoAdvent():
     
         candles = 0
         for i in advent[-4:]:
-            if self.today >= i and self.today <= xmas:
+            if self.today >= i and self.today < xmas:
                 print "{0} >= {1}".format(self.today,i)
                 candles += 1
     

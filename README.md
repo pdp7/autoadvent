@@ -1,3 +1,6 @@
 Raspberry Pi controlled LED advent candles
 
-http://www.youtube.com/watch?v=nTc9Z6wBrUs
+Description and installation instructions:
+http://www.element14.com/community/groups/raspberry-pi/blog/2012/12/24/autoadvent-raspberry-pi-controlled-led-advent-candles/
+
+Created by Drew Fustini.  Code and design release as public domain.

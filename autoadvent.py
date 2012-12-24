@@ -62,8 +62,10 @@ class AutoAdvent():
         #Push button is connected to GPIO #23 with internal pull-up resistor on
         GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_UP)
         while True:
-            input_value = GPIO.input(23)
-            if input_value == False:
+            button = GPIO.input(23)
+            # pin is shorted to ground when button is pressed
+            # so value of false means that it has been pressed
+            if button == False:
                 if self.debug == True:
                     print "SHUTDOWN"
                 os.system("sudo halt")

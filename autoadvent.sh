@@ -5,4 +5,4 @@ hwclock &> $LOG
 date &>> $LOG
 hwclock -s &>> $LOG
 date &>> $LOG
-/home/pi/autoadvent/autoadvent.py -t "Dec 20 2012" &>> $LOG
+/home/pi/autoadvent/autoadvent.py -v &>> $LOG
